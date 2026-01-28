@@ -8,8 +8,10 @@ export default function Main() {
     return (
         <section className='relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-[#0d1117]'>
 
+            {/* Фон с анимацией змеек/матрицы */}
             <MatrixSnakes />
 
+            {/* Декоративные элементы фона */}
             <div className='absolute inset-0 z-[1] pointer-events-none'>
                 <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
 
@@ -20,6 +22,7 @@ export default function Main() {
             <div className='container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-20'>
                 <div className='flex flex-col-reverse md:flex-row items-center justify-between gap-12'>
 
+                    {/* Левая колонка: Текст и кнопки */}
                     <div className='flex-1 text-center md:text-left min-w-0'>
 
                         <div className='inline-flex items-center px-3 py-1 rounded-full border border-rose-500/30 bg-rose-500/10 text-rose-400 text-xs font-medium mb-6 animate-fade-in-up'>
@@ -60,6 +63,7 @@ export default function Main() {
                             </a>
                         </div>
 
+                        {/* Статистика/Инфо */}
                         <div className='mt-12 flex items-center gap-8 justify-center md:justify-start border-t border-gray-800 pt-8 animate-fade-in-up-delay'>
                             <div>
                                 <h3 className='text-2xl font-bold text-white'>19</h3>
@@ -80,6 +84,7 @@ export default function Main() {
 
                     </div>
 
+                    {/* Правая колонка: Фото и "код" */}
                     <div className='flex-1 relative w-full max-w-md animate-fade-in-up'>
                         <div className='absolute -inset-1 bg-gradient-to-r from-rose-600 to-amber-600 rounded-2xl blur opacity-30'></div>
                         <div className='relative aspect-square w-full bg-[#1e222a] rounded-2xl border border-gray-700 overflow-hidden shadow-2xl group'>
@@ -91,6 +96,7 @@ export default function Main() {
                                 priority
                             />
 
+                            {/* Декоративное окно кода поверх фото */}
                             <div className='absolute bottom-4 left-4 right-4 bg-black/80 backdrop-blur-md p-4 rounded-xl border border-white/10 shadow-2xl translate-y-2 group-hover:translate-y-0 transition-transform'>
                                 <div className='flex gap-2 mb-3 border-b border-gray-700 pb-2'>
                                     <div className='w-3 h-3 rounded-full bg-red-500'></div>
@@ -99,9 +105,9 @@ export default function Main() {
                                 </div>
                                 <div className='space-y-1.5 font-mono text-xs text-gray-300'>
                                     <p><span className='text-purple-400'>const</span> <span className='text-amber-300'>dev</span> = &#123;</p>
-                                    <p className='pl-4'>frontend: <span className='text-green-400'>'Next.js 14'</span>,</p>
-                                    <p className='pl-4'>backend: <span className='text-rose-400'>'Nest.js'</span>,</p>
-                                    <p className='pl-4'>status: <span className='text-blue-400'>'Online'</span></p>
+                                    <p className='pl-4'>frontend: <span className='text-green-400'>&apos;Next.js 14&apos;</span>,</p>
+                                    <p className='pl-4'>backend: <span className='text-rose-400'>&apos;Nest.js&apos;</span>,</p>
+                                    <p className='pl-4'>status: <span className='text-blue-400'>&apos;Online&apos;</span></p>
                                     <p>&#125;</p>
                                 </div>
                             </div>
