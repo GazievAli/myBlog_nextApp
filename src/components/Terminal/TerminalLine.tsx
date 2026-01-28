@@ -38,7 +38,6 @@ export default function Line({
                     onChange={e => onInputChange(e.target.value)}
                     onKeyPress={onKeyPress}
                     className='w-full bg-transparent text-transparent outline-none font-mono caret-transparent relative z-10 py-1'
-                    autoFocus
                     spellCheck={false}
                     autoComplete='off'
                     autoCorrect='off'
