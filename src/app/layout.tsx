@@ -1,9 +1,11 @@
 import type { Metadata } from 'next'
 import './globals.css'
 
-export const metadata: Metadata = {
-	title: 'MyBlog',
-	description: 'Nice to meet you!',
+export const metadata = {
+    title: 'Ali Gaziev | Blog',
+    description: 'Fullstack Developer Portfolio',
+    themeColor: '#0d1117',
+    viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
 }
 
 export default function RootLayout({
